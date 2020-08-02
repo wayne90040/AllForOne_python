@@ -158,7 +158,7 @@ def get_close_bike(request):
                     result['result'] = 1
                     result['type'] = "自己最近站點"
                     city_bike['haversine'] = str(haver_min).split(".")[0]
-                    result['bikes'] = city_bike
+                    result['bikes'] = [city_bike]
                     break
             except Exception as e:
                 result['Exception'] = str(e)

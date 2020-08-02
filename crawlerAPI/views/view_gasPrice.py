@@ -14,35 +14,35 @@ def post(request):
     try:
         if type == 'All':
             result['result'] = 1
-            result['Unleaded'] = js['sPrice1']
-            result['Super'] = js['sPrice2']
-            result['Supreme'] = js['sPrice3']
-            result['AlcoholGas'] = js['sPrice4']
-            result['Diesel'] = js['sPrice5']
-            result['LiquefiedGas'] = js['sPrice6']
+            result['Unleaded'] = float(js['sPrice1'])
+            result['Super'] = float(js['sPrice2'])
+            result['Supreme'] = float(js['sPrice3'])
+            result['AlcoholGas'] = float(js['sPrice4'])
+            result['Diesel'] = float(js['sPrice5'])
+            result['LiquefiedGas'] = float(js['sPrice6'])
         elif type == 'Unleaded':
             result['result'] = 1
-            result['Unleaded'] = js['sPrice1']
+            result['Unleaded'] = float(js['sPrice1'])
 
         elif type == 'Super':
             result['result'] = 1
-            result['Super'] = js['sPrice2']
+            result['Super'] = float(js['sPrice2'])
 
         elif type == 'Supreme':
             result['result'] = 1
-            result['Supreme'] = js['sPrice3']
+            result['Supreme'] = float(js['sPrice3'])
 
         elif type == 'AlcoholGas':
             result['result'] = 1
-            result['AlcoholGas'] = js['sPrice4']
+            result['AlcoholGas'] = float(js['sPrice4'])
 
         elif type == 'Diesel':
             result['result'] = 1
-            result['Diesel'] = js['sPrice5']
+            result['Diesel'] = float(js['sPrice5'])
 
         elif type == 'LiquefiedGas':
             result['result'] = 1
-            result['LiquefiedGas'] = js['sPrice6']
+            result['LiquefiedGas'] = float(js['sPrice6'])
 
     except Exception as e:
         result['Exception'] = str(e)

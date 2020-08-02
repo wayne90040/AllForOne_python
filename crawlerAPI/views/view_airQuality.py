@@ -29,18 +29,18 @@ def post(request):
                 result['Pollutant'] = js['Pollutant']
                 result['AQIStatus'] = js['Status']
                 result['PM10'] = js['PM10']
-                result['PM2.5'] = js['PM2.5']
+                result['PM25'] = js['PM2.5']
                 result['WindSpeed'] = js['WindSpeed']
                 result['WindDir'] = js['WindDirec']
                 result['PM10Avg'] = js['PM10_AVG']
-                result['PM2.5Avg'] = js['PM2.5_AVG']
+                result['PM25Avg'] = js['PM2.5_AVG']
                 result['Date'] = js['PublishTime'].split(' ')[0]
                 result['Time'] = js['PublishTime'].split(' ')[1]
                 result['So2'] = js['SO2']
                 result['Co'] = js['CO']
                 result['O3'] = js['O3']
                 result['So2Avg'] = js['SO2_AVG']
-                result['PM2.5Status'] = 'test'
+                result['PM25Status'] = 'test'
 
                 break
     except Exception as e:
