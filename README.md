@@ -2,21 +2,24 @@
 #### Heroku-Django Practice
 
 <details>
-  <summary> 簡介 </summary>
+  <summary> Introduction </summary>
    
    - AllForOne API backstage
    
-   - 開發工具
+   - Tools
       - Pycharm
       - Django 3.0.8
     
    - Note
-      - How to use Heroku
+      - [How to use Heroku](#heroku)
       
-      - How to use AllForOne API
+      - [How to use AllForOne API](#api)
+      
+   - Reference
+      - https://djangogirlstaipei.herokuapp.com/tutorials/deploy-to-heroku/?os=windows
 </details>
 
-
+<a name="heroku"></a>
 ## How to use Heroku
 
 ### Create requirements.txt 
@@ -69,6 +72,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "siteName.settings")
 application = Cling(get_wsgi_application())
 ```
 
+<a name="api"></a>
 ## How to use AllForOne API
 
 > https://allforone-back.herokuapp.com/
@@ -82,6 +86,8 @@ Url | Memo |
 |CloseBike/| 最近Bike |
 |Weather/ | 氣溫 |
 |PreWeather/ | 近36小時氣溫 |
+
+### API Detail
 
 <details>
 <summary> AQI/(空氣品質) </summary>
